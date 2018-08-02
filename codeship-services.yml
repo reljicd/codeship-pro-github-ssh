@@ -1,0 +1,7 @@
+app:
+  build:
+    image: codeship/setting-github-ssh-key-test
+    dockerfile: docker/Dockerfile
+  volumes:
+  - .ssh:/root/.ssh
+  encrypted_env_file: codeship.env.encrypted
